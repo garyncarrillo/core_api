@@ -4,9 +4,7 @@ const server = express();
 
 
 //routes
-server.get('/', (req, res) =>{
-  res.send('Hello world');
-});
+require('./app/routes')(server);
 
 
 server.listen(3000);
